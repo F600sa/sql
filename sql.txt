@@ -1,0 +1,33 @@
+#create database schol;
+use schol;
+/*create table stu (id varchar(10) primary key ,
+sname varchar(25),
+sbrith date,
+shistory date,
+email varchar(25),
+levle varchar(25),
+sgender varchar(10) check (sgender='F' or sgender='M'),
+gpg varchar(3)
+);
+create table techer (id varchar(10) primary key ,
+tname varchar(25),
+tbrith date,
+officenum varchar (25),
+sgender varchar (10) check(sgender='F' or sgender='M')
+);*/
+#show tables;
+/*insert into stu values ('1','faisal','1196-09-06','2020-06-06',"faisla@gmail.com",'3','M','5');
+insert into stu values ('2','ahmad','1199-09-06','2020-03-04','ahmad@gmail.com','3','M','5');
+insert into stu values ('3','mona','1190-09-06','2020-09-03','mona@gmail.com','2','F','5');
+insert into techer values ('4','saleh','1196-09-2','2','M');
+insert into techer values ('5','hanan','1196-09-4','3','F');
+insert into techer values ('6','mshari','1196-09-1','2','M');*/
+#select *from course;
+#select *from stu;
+select *from techer; #بحث عن الجدول
+#select sname as stuname from stu; #بحث عن شي بالجدول
+#update stu set email = 'ahma@gmail.com' where id ='2';
+#UPDATE `schol`.`techer` SET `officenum` = '3' WHERE (`id` = '6'); #تغير شي بالجدول
+alter table techer rename to supervisor;#    تغير اسم الجدول
+
+
